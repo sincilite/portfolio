@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply font-open-sans;
+    @apply font-normal;
+    @apply text-base;
+  }
+  h1 {
+    @apply text-3xl;
+    @apply md:text-7xl;
+    @apply font-vollkorn;
+    @apply font-extrabold;
+    @apply mb-4;
+  }
+
+  h2 {
+    @apply md:text-3xl;
+    @apply text-3xl;
+    @apply font-vollkorn;
+    @apply font-normal;
+    @apply mb-4;
+  }
+
+  h3 {
+    @apply text-lg;
+    @apply font-vollkorn;
+    @apply font-normal;
+    @apply mb-0;
+  }
+
+  a {
+    background-size: 0 100%;
+    background-position: 0 100%;
+    @apply bg-no-repeat transition-all duration-200;
+  }
+
+  a:hover, a:focus {
+    background-size: 70% 100%;
+  }
+
+  article {
+    @apply mb-4;
+  }
+}
