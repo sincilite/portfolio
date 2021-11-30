@@ -78,9 +78,6 @@ const IndexPage = () => {
           <h2>Contact me</h2>
           <ContactForm />
         </section>
-        <footer className="p-6 md:p-12">
-          <p>&copy;2021</p>
-        </footer>
       </Layout>
     </main>
   )

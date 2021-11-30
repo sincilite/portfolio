@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Footer from "./footer";
 
 export default function Layout({ children }) {
   return (
@@ -12,6 +13,7 @@ export default function Layout({ children }) {
       <div className="w-full pt-6 md:pt-12">
         <div className="md:m-auto max-w-screen-lg">
           {children}
+          <Footer />
         </div>
       </div>
     </>
