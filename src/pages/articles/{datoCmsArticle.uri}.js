@@ -17,7 +17,7 @@ const Article = ({ data }) => {
       return <HtmlContent key={block.id} markDown={block.copy} />
     }
     if (block.internal.type === "DatoCmsCode") {
-      return <CodeSnippet key={block.id} code={block.gistid} />;
+      return <CodeSnippet key={block.id} code={block.codepenslug} />;
     }
   });
 
@@ -67,7 +67,7 @@ export const query = graphql`
         }
         ... on DatoCmsCode {
           id
-          gistid
+          codepenslug
           internal {
             type
           }
