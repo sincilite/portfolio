@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -7,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: "018e3c935617e74809a52bbc2ca982",
+        apiToken: process.env.CMS_API_KEY,
       },
     },
     "gatsby-plugin-image",
